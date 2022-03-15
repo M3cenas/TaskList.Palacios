@@ -1,18 +1,16 @@
 import React from 'react';
 import { 
-  StyleSheet,
-  SafeAreaView,
   View,
-  TextInput,
   Text,
-  FlatList,
-  TouchableOpacity,
-  Alert, } from 'react-native';
+  TouchableOpacity,} 
+from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import { styles } from './styles';
 
-const COLORS = {primary: '#1f145c', white: '#fff'};
 
-const ListItem = ({todo}) => {
+const ListItem = ({ todo, deleteTodo, markTodoComplete }) => {
+  const COLORS = {primary: '#1f145c', white: '#fff'};
+
   return (
     <View style={styles.listItem}>
       <View style={{flex: 1}}>

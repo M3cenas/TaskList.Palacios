@@ -1,16 +1,25 @@
 import { StyleSheet } from 'react-native'
 
+const COLORS = {primary: '#1f145c', white: '#fff'};
+
 export const styles = StyleSheet.create({
-    container: {
-        flex: 1,
+    inputContainer: {
+      height: 50,
+      paddingHorizontal: 20,
+      elevation: 40,
+      backgroundColor: COLORS.white,
+      flex: 1,
+      marginVertical: 20,
+      marginRight: 20,
+      borderRadius: 30,
     },
-    textInput: {
-        borderColor: 'black',
-        borderBottomWidth: 1, 
-        marginBottom: 10,
-        width: '70%',
-        height: 40,
-        fontSize: 14,
-        color: '#212121'
-      }
+    iconContainer: {
+      height: 50,
+      width: 50,
+      backgroundColor: COLORS.primary,
+      elevation: 40,
+      borderRadius: 25,
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
 });
